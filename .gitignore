@@ -1,0 +1,14 @@
+# Generated output
+.dist/
+
+# Editor settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

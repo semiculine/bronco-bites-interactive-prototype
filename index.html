@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7f2">
+    <meta
+      name="description"
+      content="Find fresh surplus meals from campus events and pick them up from BroncoBites temperature-controlled lockers."
+    >
+    <title>BroncoBites Surplus Lockers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="BroncoBites home">
+        <span class="brand-mark" aria-hidden="true">B<span>+</span></span>
+        <span class="brand-name">bronco<span>bites</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link nav-link-active" href="#meals">Find a meal</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+      </nav>
+      <a class="saved-pill" href="#impact">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span id="header-saved-count">1,284</span> meals saved
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> GOOD FOOD, SECOND SERVINGS</span>
+          <h1 id="hero-title">A little less waste.<br>A lot more <span>taste.</span></h1>
+          <p class="hero-description">
+            Fresh from campus events, waiting in a locker near you. Grab a good meal
+            before it goes to waste.
+          </p>
+          <a class="primary-button hero-button" href="#meals">
+            Find your next meal <span aria-hidden="true">↗</span>
+          </a>
+          <div class="hero-note">
+            <span class="avatar-stack" aria-hidden="true"><i>J</i><i>M</i><i>A</i></span>
+            <span>Join <strong>2,400+</strong> Broncos eating a little greener</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Fresh surplus meal, ready for pickup">
+          <div class="hero-image">
+            <div class="sun-shape" aria-hidden="true"></div>
+            <div class="plate">
+              <div class="plate-food plate-rice"></div>
+              <div class="plate-food plate-greens"></div>
+              <div class="plate-food plate-tomatoes"></div>
+              <div class="plate-food plate-avocado"></div>
+              <div class="plate-food plate-chickpeas"></div>
+            </div>
+            <div class="photo-tag"><span aria-hidden="true">✦</span> rescued &amp; ready</div>
+          </div>
+          <div class="locker-card">
+            <span class="locker-icon" aria-hidden="true">▦</span>
+            <span><strong>Locatelli Student Activity Center</strong><small>Locker 04 · <span class="available-text">Ready now</span></small></span>
+            <span class="locker-arrow" aria-hidden="true">↗</span>
+          </div>
+          <span class="hero-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="hero-sparkle sparkle-two" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="meals-section section-wrap" id="meals" aria-labelledby="meals-title">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow section-eyebrow">THE GOOD STUFF</span>
+            <h2 id="meals-title">Fresh finds on campus<span class="heading-period">.</span></h2>
+            <p class="section-description">Made with care. Left over with love. Ready when you are.</p>
+          </div>
+          <div class="meal-count"><span class="live-dot" aria-hidden="true"></span><span id="available-count">4</span> meals available</div>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-list" role="group" aria-label="Filter meals by dietary preference">
+            <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All meals <span>04</span></button>
+            <button class="filter-chip" type="button" data-filter="vegetarian" aria-pressed="false"><span class="diet-dot veg-dot" aria-hidden="true"></span> Vegetarian</button>
+            <button class="filter-chip" type="button" data-filter="vegan" aria-pressed="false"><span class="diet-dot vegan-dot" aria-hidden="true"></span> Vegan</button>
+            <button class="filter-chip" type="button" data-filter="gluten-free" aria-pressed="false"><span class="diet-dot gf-dot" aria-hidden="true"></span> Gluten-free</button>
+          </div>
+          <span class="pickup-note"><span aria-hidden="true">⌖</span> Pick up nearby</span>
+        </div>
+
+        <div class="meal-grid" id="meal-grid">
+          <article class="meal-card" data-diets="vegetarian gluten-free">
+            <div class="meal-image image-bowl" role="img" aria-label="Roasted vegetable grain bowl">
+              <span class="meal-origin"><span aria-hidden="true">✳</span> JUST ADDED</span>
+              <span class="portion-tag"><span class="status-pulse" aria-hidden="true"></span><span data-portions>3</span> portions</span>
+              <div class="bowl-art" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="meal-content">
+              <div class="meal-title-row"><h3>Roasted veggie grain bowl</h3><span class="price">$0</span></div>
+              <p class="meal-subtitle">by Campus Catering · 4 min walk</p>
+              <div class="diet-badges">
+                <span class="diet-badge badge-vegetarian">Vegetarian</span>
+                <span class="diet-badge badge-gluten-free">Gluten-free</span>
+              </div>
+              <div class="meal-footer"><span class="locker-location"><span aria-hidden="true">⌖</span> Locatelli Center · L04</span><button class="pickup-button" type="button" data-meal="Roasted veggie grain bowl">Get pickup QR <span aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+
+          <article class="meal-card" data-diets="vegan gluten-free">
+            <div class="meal-image image-wrap" role="img" aria-label="Colorful hummus and veggie wrap">
+              <span class="meal-origin origin-loved"><span aria-hidden="true">♥</span> STUDENT FAVE</span>
+              <span class="portion-tag"><span class="status-pulse" aria-hidden="true"></span><span data-portions>2</span> portions</span>
+              <div class="wrap-art" aria-hidden="true"><i></i><i></i></div>
+            </div>
+            <div class="meal-content">
+              <div class="meal-title-row"><h3>Hummus &amp; garden wrap</h3><span class="price">$0</span></div>
+              <p class="meal-subtitle">by The Commons · 2 min walk</p>
+              <div class="diet-badges">
+                <span class="diet-badge badge-vegan">Vegan</span>
+                <span class="diet-badge badge-gluten-free">Gluten-free</span>
+              </div>
+              <div class="meal-footer"><span class="locker-location"><span aria-hidden="true">⌖</span> Benson Memorial · B02</span><button class="pickup-button" type="button" data-meal="Hummus &amp; garden wrap">Get pickup QR <span aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+
+          <article class="meal-card" data-diets="vegetarian">
+            <div class="meal-image image-pasta" role="img" aria-label="Fresh tomato and basil pasta">
+              <span class="meal-origin origin-local"><span aria-hidden="true">✳</span> EVENT LEFTOVER</span>
+              <span class="portion-tag"><span class="status-pulse" aria-hidden="true"></span><span data-portions>5</span> portions</span>
+              <div class="pasta-art" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <div class="meal-content">
+              <div class="meal-title-row"><h3>Tomato basil pasta</h3><span class="price">$0</span></div>
+              <p class="meal-subtitle">by Alumni Relations · 6 min walk</p>
+              <div class="diet-badges">
+                <span class="diet-badge badge-vegetarian">Vegetarian</span>
+              </div>
+              <div class="meal-footer"><span class="locker-location"><span aria-hidden="true">⌖</span> Lucas Hall · L01</span><button class="pickup-button" type="button" data-meal="Tomato basil pasta">Get pickup QR <span aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+
+          <article class="meal-card" data-diets="vegan">
+            <div class="meal-image image-fruit" role="img" aria-label="Seasonal fruit and oat cup">
+              <span class="meal-origin origin-loved"><span aria-hidden="true">♥</span> STUDENT FAVE</span>
+              <span class="portion-tag"><span class="status-pulse" aria-hidden="true"></span><span data-portions>4</span> portions</span>
+              <div class="fruit-art" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="meal-content">
+              <div class="meal-title-row"><h3>Seasonal fruit &amp; oat cup</h3><span class="price">$0</span></div>
+              <p class="meal-subtitle">by University Events · 3 min walk</p>
+              <div class="diet-badges">
+                <span class="diet-badge badge-vegan">Vegan</span>
+              </div>
+              <div class="meal-footer"><span class="locker-location"><span aria-hidden="true">⌖</span> Benson Memorial · B06</span><button class="pickup-button" type="button" data-meal="Seasonal fruit &amp; oat cup">Get pickup QR <span aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No meals match that filter right now. Try another dietary preference.</p>
+      </section>
+
+      <section class="impact-section" id="impact" aria-labelledby="impact-title">
+        <div class="impact-inner section-wrap">
+          <div class="impact-copy">
+            <span class="eyebrow impact-eyebrow"><span aria-hidden="true">✳</span> GOOD FOR YOU, GOOD FOR OUR PLANET</span>
+            <h2 id="impact-title">Every bite makes<br>a little <span>difference.</span></h2>
+            <p>Campus events bring people together. Now their extra meals can, too. Pick up something delicious and help us keep good food out of the bin.</p>
+            <a class="impact-link" href="#how-it-works">See how it works <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="impact-stat" aria-live="polite">
+            <span class="stat-label"><span class="live-dot" aria-hidden="true"></span> MEALS SAVED ON CAMPUS</span>
+            <span class="stat-number" id="saved-count">1,284</span>
+            <span class="stat-caption">and counting, one good meal at a time</span>
+            <div class="stat-divider"></div>
+            <span class="stat-footnote"><span aria-hidden="true">♧</span> Less waste. More campus community.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-section section-wrap" id="how-it-works" aria-labelledby="how-title">
+        <div class="how-heading">
+          <span class="eyebrow section-eyebrow">EASY AS ONE, TWO, EAT</span>
+          <h2 id="how-title">Good food, no fuss<span class="heading-period">.</span></h2>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <span class="step-number">01</span>
+            <span class="step-icon" aria-hidden="true">⌕</span>
+            <h3>Find your feel-good meal</h3>
+            <p>Browse what's fresh and filter for what works for you.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">02</span>
+            <span class="step-icon" aria-hidden="true">▦</span>
+            <h3>Get your pickup QR</h3>
+            <p>Choose a meal to see its locker and your one-time pickup code.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">03</span>
+            <span class="step-icon" aria-hidden="true">♡</span>
+            <h3>Grab, eat, feel good</h3>
+            <p>Pick up fresh, enjoy free, and help good food go further.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">B<span>+</span></span>
+        <span class="brand-name">bronco<span>bites</span></span>
+      </a>
+      <span>Good food deserves another round. <span aria-hidden="true">✳</span></span>
+      <span class="footer-campus">Made for Broncos, with care <span aria-hidden="true">♡</span></span>
+    </footer>
+
+    <dialog class="pickup-dialog" id="pickup-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close pickup details">×</button>
+      <span class="dialog-check" aria-hidden="true">✓</span>
+      <span class="eyebrow section-eyebrow">YOUR NEXT GOOD MEAL</span>
+      <h2 id="dialog-title">It's yours!</h2>
+      <p class="dialog-meal" id="dialog-meal"></p>
+      <div class="qr-demo" aria-hidden="true"><span>BB</span></div>
+      <p class="qr-caption">Show this pickup code at your locker</p>
+      <div class="pickup-code">
+        <span class="code-label">YOUR DEMO PICKUP CODE</span>
+        <strong id="pickup-code">BB-0000</strong>
+      </div>
+      <div class="dialog-locker"><span aria-hidden="true">⌖</span><span id="dialog-location"></span></div>
+      <p class="demo-note">Prototype preview · locker access is not connected</p>
+    </dialog>
+    <div class="dialog-backdrop" id="dialog-backdrop" hidden></div>
+  </body>
+</html>
